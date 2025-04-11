@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: palegreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .main-table {
+    width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+  }
+  
+  .top-pic {
+    width: 980px;
+    display: block;
+  }
+  
+  .home-bar {
+    background-color: lightgray;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .left-pics-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .left-bar {
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .left-pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .centered-text {
+    width: 68%;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .books-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .book {
+    padding: 0;
+    border: 1px solid white;
+  }
+  
+  .book-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .book-pic {
+    background-color: white;
+    padding: 15px;
+    height: 210px;
+    width: 130px;
+  }
+  
+  .book-pic img {
+    width: 130px;
+    height: 100%;
+    display: block;
+  }
+  
+  .book-details {
+    padding: 15px;
+    vertical-align: top;
+  }
+  
+  .book-info {
+    width: 100%;
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  .book-info td {
+    background-color: lightgrey;
+    border-bottom: 3px solid white;
+    padding: 6px;
+  }
+  
+  .available {
+    color: green;
+  }
+  
+  .more-info {
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .divider {
+    padding-left: 15px;
+    margin: -10px 0 -10px 0;
+  }
+  
+  .divider img {
+    display: block;
+    height: auto;
+  }
+  

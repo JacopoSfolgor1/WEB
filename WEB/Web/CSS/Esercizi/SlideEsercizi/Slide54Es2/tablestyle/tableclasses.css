@@ -1,0 +1,83 @@
+.title {
+    width: 300px;          
+    margin: 50px auto;     
+    text-align: center;     
+}
+
+.grid {
+    width: 300px;           
+    height: 300px;         
+    border-collapse: collapse;
+}
+
+.gridx {
+    font-size: 36px;             
+    text-align: center;         
+    vertical-align: middle;    
+    width: 100px;             
+    height: 100px;            
+    border: 1px solid black;   
+}
+
+.first {
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: gray;
+    border-right-color: gray;
+}
+
+.second {
+    border-top-color: white;
+    border-left-color: gray;
+    border-right-color: gray;
+    border-bottom-color: gray;
+}
+
+.third {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: gray;
+    border-left: gray;
+}
+
+.fourth {
+    border-top-color: gray;
+    border-bottom-color: gray;
+    border-left-color: white;
+    border-right-color: gray;
+}
+
+.fifth {
+    border-top-color: gray;
+    border-bottom-color: gray;
+    border-left-color: gray;
+    border-right-color: gray;
+}
+
+.sixth {
+    border-top-color: gray;
+    border-bottom-color: gray;
+    border-left-color: white;
+    border-right-color: white;
+}
+
+.seventh {
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: gray;
+}
+
+.eighth {
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: gray;
+    border-right-color: gray;
+}
+
+.ninth {
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
