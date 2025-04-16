@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista Spesa Semplice</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url("pics/base.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: 'Luckiest Guy', cursive;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      color: rgba(255, 234, 47, 0.904);
+      font-size: 40px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px auto;
+      padding: 10px 20px;
+      width: fit-content;
+      background: rgb(1, 211, 248);
+      border-radius: 8px;
+      font-size: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+      background-color: rgb(255, 0, 242);
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: rgb(1, 211, 248);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+
+    input, button {
+      margin: 5px;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .controls {
+      margin-top: 10px;
+    }
+
+    #popup-img {
+      display: none;
+      width: 320px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin: 0 auto 10px auto;
+    }
+
+    .popup-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #error-add {
+      color: red;
+      font-size: 18px;
+    }
+  </style>
+
+  <script>
+    function showPopupImage(imgPath) {
+      const img = document.getElementById("popup-img");
+      if (imgPath.includes("base.jpg")) {
+        img.style.display = "none";
+      } else {
+        img.src = imgPath;
+        img.style.display = "block";
+      }
+    }
+
+    function addElement() {
+      const ul = document.getElementById("ul");
+      const li = document.createElement("li");
+      const cibo = document.getElementById("add").value;
+
+      if (cibo.trim() !== "" && isNaN(cibo)) {
+        li.textContent = cibo;
+        ul.appendChild(li);
+        document.getElementById("add").value = "";
+        document.getElementById("error-add").textContent = "";
+        showPopupImage("pics/addfood.jpg");
+      } else {
+        document.getElementById("error-add").textContent = "Aggiungi un prodotto valido";
+        document.getElementById("add").value = "";
+        showPopupImage("pics/erroradd.jpg");
+      }
+    }
+
+    function resetElements() {
+      document.getElementById("ul").innerHTML = "";
+      document.getElementById("error-add").textContent = "";
+      showPopupImage("pics/resetfood.jpg");
+    }
+  </script>
+</head>
+<body>
+  <h1>Lista della spesa</h1>
+
+  <ul id="ul"></ul>
+
+  <div id="error-add"></div>
+
+  <input id="add" type="text" name="add" placeholder="Inserisci il prodotto"><br><br>
+
+  <div class="popup-container">
+    <img id="popup-img" src="" alt="popup" />
+    
+    <div class="controls">
+      <button onclick="addElement()">Aggiungi alla lista</button>
+      <button onclick="resetElements()">Rimuovi tutti i prodotti</button>
+    </div>
+  </div>
+</body>
+</html>

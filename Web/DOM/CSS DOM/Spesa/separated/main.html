@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista Spesa Semplice</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="classes.css">
+</head>
+<body>
+  <h1>Lista della spesa</h1>
+
+  <ul id="ul"></ul>
+
+  <div id="error-add"></div>
+
+  <input id="add" type="text" name="add" placeholder="Inserisci il prodotto"><br><br>
+
+  <div class="popup-container">
+    <img id="popup-img" src="" alt="popup" />
+    
+    <div class="controls">
+      <button onclick="addElement()">Aggiungi alla lista</button>
+      <button onclick="resetElements()">Rimuovi tutti i prodotti</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
